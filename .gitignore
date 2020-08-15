@@ -1,3 +1,6 @@
 .idea
 /venv/
 twitter_config.py
+
+__pycache__/
+services/twitter/__pycache__/
