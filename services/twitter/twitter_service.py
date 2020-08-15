@@ -14,7 +14,7 @@ class TwitterService:
 
     def retweet_by_query(self, query, num_tweets=3):
         for tweet in tweepy.Cursor(self.api.search, q=query).items(num_tweets):
-            time.sleep(2)
+            time.sleep(1)
             try:
                 self.api.retweet(tweet.id)
                 print('Retweeted ID', tweet.id)
